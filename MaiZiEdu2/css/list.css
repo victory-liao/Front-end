@@ -1,0 +1,331 @@
+.on{
+	background-color: #444444;
+}
+/*图片列表*/
+article header h2{
+	color: #444;
+	font-size: 16px;
+	border-bottom: solid 1px #d6d6d6;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+#body_wrapper li{
+	display: inline-block;
+	vertical-align: top;
+}
+#body_wrapper li a{
+	color: #444444;
+	text-decoration: none;
+}
+.piclist li{
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 202px;
+	height: 149px;
+	text-align: center;
+}
+.piclist li img{
+	width: 202px;
+	height: 124px;
+	border-radius: 9px;
+}
+/*循环使用样式*/
+.piclist li:nth-child(3n+3){
+	margin-right: 0px;
+}
+
+/*动画*/
+@-webkit-keyframes piclist{
+	0%{
+		border-radius: 1px;
+		-webkit-transform: rotate(0deg)scale(1);
+		opacity: 0.5;
+	}
+	40%{
+		-webkit-transform: rotate(60deg)scale(2);
+		opacity: 0.9;
+	}
+	60%{
+		border-radius: 110px;
+		-webkit-transform: rotate(30deg)scale(1.3);
+		 /*英 [əʊˈpæsəti] 不透明性*/
+		opacity: 0.2;
+		
+	}
+	90%{
+		border-radius: 11px;
+		-webkit-transform: rotate(0deg)scale(0.8);
+		opacity: 1;
+	}
+}
+@-moz-keyframes piclist{
+	0%{
+		border-radius: 1px;
+		-moz-transform: rotate(0deg)scale(1);
+		opacity: 0.5;
+	}
+	40%{
+		-moz-transform: rotate(60deg)scale(2);
+		opacity: 0.9;
+	}
+	60%{
+		border-radius: 110px;
+		-moz-transform: rotate(30deg)scale(1.3);
+		 /*英 [əʊˈpæsəti] 不透明性*/
+		opacity: 0.2;
+		
+	}
+	90%{
+		border-radius: 11px;
+		-moz-transform: rotate(0deg)scale(0.8);
+		opacity: 1;
+	}
+}
+@-ms-keyframes piclist{
+	0%{
+		border-radius: 1px;
+		-ms-transform: rotate(0deg)scale(1);
+		opacity: 0.5;
+	}
+	40%{
+		-ms-transform: rotate(60deg)scale(2);
+		opacity: 0.9;
+	}
+	60%{
+		border-radius: 110px;
+		-ms-transform: rotate(30deg)scale(1.3);
+		 /*英 [əʊˈpæsəti] 不透明性*/
+		opacity: 0.2;
+		
+	}
+	90%{
+		border-radius: 11px;
+		-ms-transform: rotate(0deg)scale(0.8);
+		opacity: 1;
+	}
+}
+@-o-keyframes piclist{
+	0%{
+		border-radius: 1px;
+		-o-transform: rotate(0deg)scale(1);
+		opacity: 0.5;
+	}
+	40%{
+		-o-transform: rotate(60deg)scale(2);
+		opacity: 0.9;
+	}
+	60%{
+		border-radius: 110px;
+		-o-transform: rotate(30deg)scale(1.3);
+		 /*英 [əʊˈpæsəti] 不透明性*/
+		opacity: 0.2;
+		
+	}
+	90%{
+		border-radius: 11px;
+		-o-transform: rotate(0deg)scale(0.8);
+		opacity: 1;
+	}
+}
+@keyframes piclist{
+	0%{
+		border-radius: 1px;
+		transform: rotate(0deg)scale(1);
+		opacity: 0.5;
+	}
+	40%{
+		transform: rotate(60deg)scale(2);
+		opacity: 0.9;
+	}
+	60%{
+		border-radius: 110px;
+		transform: rotate(30deg)scale(1.3);
+		 /*英 [əʊˈpæsəti] 不透明性*/
+		opacity: 0.2;
+		
+	}
+	90%{
+		border-radius: 11px;
+		transform: rotate(0deg)scale(0.8);
+		opacity: 1;
+	}
+}
+.piclist li:hover{
+	/*safari*/
+	-webkit-animation-name: piclist;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	/*Firefox*/
+	-moz-animation-name: piclist;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	/*IE 9*/
+	-ms-animation-name: piclist;
+	-ms-animation-duration: 1s;
+	-ms-animation-timing-function: linear;
+	/*欧朋*/
+	-o-animation-name: piclist;
+	-o-animation-duration: 1s;
+	-o-animation-timing-function: linear;
+	/*w3c*/
+	animation-name: piclist;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+.listnav{
+	margin-top: 10px;
+}
+.listnav li{
+	background-color: #3598DB;
+	padding: 3px 10px;
+	margin-right: 10px;
+	-webkit-transition: background-color 0.5s linear; 
+	-moz-transition: background-color 0.5s linear;
+	-ms-transition: background-color 0.5s linear;
+	-o-transition: background-color 0.5s linear;
+	transition: background-color 0.5s linear;
+}
+#body_wrapper .listnav a{
+	color: white;
+}
+section.listnav li:hover{
+	background-color: #444;
+}
+section#tuijianlist{
+	margin-top: 20px;
+}
+.toplist_tit h3{
+	color: #444;
+	border-bottom: solid 1px #D6D6D6;
+	padding-bottom: 6px;
+}
+section.toplist li:before
+{
+	content:counter(listxh);
+	
+	background-color: #444;
+	padding: 2px 7px;
+	color: #fff;
+	margin-right: 5px;sss
+}
+section.toplist li{
+	/*标题前加序号*/
+	counter-increment: listxh;
+	
+	display: inline-block;
+	width: 100%;
+	vertical-align: bottom;
+	
+	overflow: hidden;
+	/*不换行*/
+	white-space: nowrap;
+	/*显示省略符号来代表被修剪的文本。*/
+	text-overflow: ellipsis;
+	
+	margin-top: 16px;
+	
+	/*文字阴影的渐变效果*/
+	-webkit-transition: text-shadow 1s linear;
+	-moz-transition: text-shadow 1s linear;
+	-ms-transition: text-shadow 1s linear;
+	-o-transition: text-shadow 1s linear;
+	transition: text-shadow 1s linear;
+}
+/*选择前三个显示为蓝色*/
+section.toplist li:first-child:before,section.toplist li:nth-child(2):before,section.toplist li:nth-child(3):before{
+	background-color: #3598DB;
+}
+section.toplist li:last-child:before{
+	padding: 2px 4px;
+	font-size: 14px;
+}
+section.toplist li a{
+	color: #444;
+	text-decoration: none;
+}
+/*鼠标放在文字上出现文字阴影*/
+section.toplist li:hover{
+	text-shadow: 1px 4px 4px #000;
+}
+
+/*新闻列表*/
+.newslist li a{
+	display: inline-block;
+	width: 510px;
+	vertical-align: top;
+}
+.newslist li{
+	margin-top: 10px;
+	-webkit-transition: text-shadow 1s linear;
+	-moz-transition: text-shadow 1s linear;
+	-ms-transition: text-shadow 1s linear;
+	-o-transition: text-shadow 1s linear;
+	transition: text-shadow 1s linear;
+}
+.newslist li:hover{
+	text-shadow: 1px 4px 5px;
+}
+.newslist li:nth-child(5n+5){
+	border-bottom: solid 1px #D6D6D6;
+	padding-bottom: 10px;
+}
+.newslist li:last-child{
+	border-bottom: 0;
+}
+.newslist li time{
+	display: inline-block;
+	width: 117px;
+	text-align: center;
+	vertical-align: top;
+	color: #444;
+}
+/*内容页*/
+header.content_h1 h1{
+    font-weight: normal;
+    margin: 20px 0;
+}
+div.title_bar .bdsharebuttonbox.bdshare-button-style0-16 {
+    display: inline-block;
+    vertical-align: bottom;
+}
+div.title_bar .bdsharebuttonbox.bdshare-button-style0-16 a{
+    border: 0;
+    padding-right: 0px;
+}
+header div.title_bar{
+    font-size: 10px;
+    font-family: "宋体";
+    color: #808080;
+    border-bottom: solid 1px #CAC7C7;
+    padding-bottom: 2px;
+    line-height: 28px;
+}
+header div.title_bar a{
+    color: #3598DB;
+    border-right: solid 1px #CAC7C7;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+header div.title_bar time{
+    margin-right: 20px;
+}
+.content_nr{
+    color: #444;
+    padding: 20px 0;
+    text-indent: 34px;
+    line-height: 30px;
+}
+section.xiangguanyuedu{
+	margin-top: 10px;
+	height: 38px;
+	overflow: hidden;
+}
+section.xiangguanyuedu a{
+	text-decoration: none;
+	color: #3598DB;
+}
+section.xiangguanyuedu a:first-child{
+	margin-right: 10px;
+}
+
