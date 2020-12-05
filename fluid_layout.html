@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type="text/css">
+			body,ul{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.menu li a{
+				text-decoration: none;
+			}
+			.menu{
+				height: 50px;
+			}
+			.menu li{
+				/*第一种解决宽度超过的方法*/
+				/*width: calc(25%-4px);*/
+				width: 25%;
+				/*第二种解决方法 设置盒子的尺寸计算方式从边框开始*/
+				box-sizing: border-box;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+				background-color: gold;
+				border: 2px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="menu">
+			<li><a href="">菜单文字1</a></li>
+			<li><a href="">菜单文字2</a></li>
+			<li><a href="">菜单文字3</a></li>
+			<li><a href="">菜单文字4</a></li>
+		</ul>
+	</body>
+</html>
