@@ -1,0 +1,322 @@
+/*公共样式 public style*/
+body{
+	font-family: "微软雅黑"
+}
+
+.main_wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	background-color: gold;
+}
+
+
+/*网页头部样式 header style*/
+.header{
+	height: 2.5rem;
+	background-color: #37AB40;
+	
+	position: relative;
+}
+
+.header .logo{
+	/*a标签为行内元素不支持宽高，将其转为块元素（支持宽高）*/
+	display: block;
+	width: 4.45rem;
+	height: 1.8rem;	
+	
+	margin: 0.35rem auto 0;
+}
+
+.header .logo img{
+	width: 100%;
+}
+
+.header .search{
+	position: absolute;
+	top: 0.625rem;
+	right: 0.75rem;
+	
+	width: 1.35rem;
+	height: 1.35rem;
+	
+	background: url(../images/icons.png) left top no-repeat;
+	background-size: 3.0rem 42.0rem;
+}
+
+/*网页主体样式 main body style*/
+.center_wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2.5rem;
+	bottom: 2.5rem;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	background-color: #efefef;
+}
+
+.slide img{
+	width: 100%;
+}
+
+.menu_con{
+	height: 9.25rem;
+	
+	list-style: none;
+	
+	background-color: #fff;
+	
+	margin-top: 0.5rem;
+	
+	overflow: hidden;
+}
+
+.menu{
+	width: 19rem;
+	height: 8.1rem;
+	
+	margin: 0.7rem 0 0 1.375rem;
+}
+
+.menu li{
+	width: 2.8rem;
+	height: 4.1rem;
+	
+	float: left;
+	
+	margin-right: 1.625rem;
+}
+
+.menu li a{
+	display: block;
+	width: 2.8rem;
+	height: 2.8rem;
+	
+	background: url(../images/icons.png) left -3rem no-repeat;
+	background-size: 3.0rem 42.0rem;
+}
+
+.menu li:nth-child(2) a{
+	background-position: left -6rem;
+}
+
+.menu li:nth-child(3) a{
+	background-position: left -9rem;
+}
+
+.menu li:nth-child(4) a{
+	background-position: left -12rem;
+}
+
+.menu li:nth-child(5) a{
+	background-position: left -15rem;
+}
+
+.menu li:nth-child(6) a{
+	background-position: left -18rem;
+}
+
+.menu li:nth-child(7) a{
+	background-position: left -21rem;
+}
+
+.menu li:nth-child(8) a{
+	background-position: left -24rem;
+}
+
+.menu li h2{
+	height: 1.3rem;
+	
+	font: 13px/1.3rem "微软雅黑";
+	color: #666666;
+	
+	text-align: center;
+}
+
+.common_model{
+	background-color: #fff;
+	
+	margin: 0.5rem 0;
+}
+
+.common_title{
+	width: 17.75rem;
+	height: 0.9rem;
+	
+	margin: 0.8rem auto 0;
+}
+
+.common_title h3{
+	border-left: 0.25rem solid #fbc83d;
+	
+	font: bold 15px/0.9rem "微软雅黑";
+	color: #fbc83d;
+	
+	text-indent: 0.4rem;
+	
+}
+
+.common_title a{
+	font: 12px/0.9rem "微软雅黑";
+	color: #7f7f7f;
+}
+
+
+.banner{
+	width: 17.75rem;
+	height: 4.5rem;
+	
+	margin: 0.5rem auto 0;
+}
+
+.banner img{
+	width: 100%;
+}
+
+.goods_list{
+	width: 17.75rem;
+	height: 9.35rem; 
+	
+	margin: 0.5rem auto 0.7rem;
+}
+
+.goods_list li{
+	float: left;
+	
+	width: 5.8rem;
+	height: 9.35rem;
+	
+	border-right: 1px solid #e7e7e7;
+	
+	position: relative;
+}
+
+.goods_list li:last-child{
+	border-right: 0px;
+}
+
+.goods_list li .goods_pic{
+	display: block;
+	
+	width: 4.5rem;
+	height: 4.5rem;
+	
+	margin: 0.5rem auto 0;
+}
+
+.goods_list li .goods_pic img{
+	width: 100%;
+}
+
+.goods_list li .goods_name{
+	width: 5.0rem;
+	
+	overflow: hidden;/*超出隐藏*/
+	white-space: nowrap;/*不换行*/
+	text-overflow: ellipsis;/*超出的用省略号*/
+	
+	font: 15px/15px "微软雅黑";
+	color: #666666;
+	
+	margin: 0.75rem auto 0;
+}
+
+.goods_list li .goods_unit{
+	width: 5rem;
+	
+	font: 12px/12px "微软雅黑";
+	color: #bbb;
+	
+	margin: 0.8rem auto 0;
+}
+
+.goods_list li .goods_price{
+	width: 5rem;
+	
+	font: 12px/12px "微软雅黑";
+	color: #ff4400;
+	
+	margin: 0.5rem auto 0;
+}
+
+.goods_list li .add_chart{
+	position: absolute;
+	right: 0.675rem;
+	bottom: 0;
+	
+	width: 1.7rem;
+	height: 1.7rem;
+	
+	background: url(../images/icons.png) left -27rem no-repeat;
+	background-size: 3.0rem 42.0rem;
+}
+
+@media (min-width:375px){
+	.goods_list li .goods_price{
+		font: 14px/14px "微软雅黑";
+	}
+	
+	.goods_list li .goods_unit{
+		font: 14px/14px "微软雅黑";
+	}
+}
+
+
+/*网页底部样式 header style*/
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	width: 100%;
+	height: 2.5rem;
+	
+	background-color: #fff;
+}
+
+.footer ul{
+	height: 2.5rem;
+}
+
+.footer ul li{
+	width: 25%;
+	height: 2.5rem;
+	
+	float: left;
+}
+
+.footer li a{
+	display: block;
+	width: 1.375rem;
+	height: 1.3rem;
+	
+	margin: 0.25rem auto 0;
+	
+	background: url(../images/icons.png) left -30rem no-repeat;
+	background-size: 3.0rem 42.0rem;
+}
+
+.footer li:nth-child(2) a{
+	background-position: left -33rem;
+}
+
+.footer li:nth-child(3) a{
+	background-position: left -36rem;
+}
+
+.footer li:nth-child(4) a{
+	background-position: left -39rem;
+}
+
+.footer li h2{
+	font: 12px/12px "微软雅黑";
+	color: #949382;
+	text-align: center;
+	margin-top: 0.2rem
+}
